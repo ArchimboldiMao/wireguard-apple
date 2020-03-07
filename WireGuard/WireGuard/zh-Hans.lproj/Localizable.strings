@@ -1,0 +1,443 @@
+// SPDX-License-Identifier: MIT
+// Copyright © 2018-2019 WireGuard LLC. All Rights Reserved.
+
+// Generic alert action names
+
+"actionOK" = "好的OK";
+"actionCancel" = "取消Cancel";
+"actionSave" = "保存Save";
+
+// Tunnels list UI
+
+"tunnelsListTitle" = "WireGuard";
+"tunnelsListSettingsButtonTitle" = "设置Settings";
+"tunnelsListCenteredAddTunnelButtonTitle" = "创建隧道Add a tunnel";
+"tunnelsListSwipeDeleteButtonTitle" = "删除Delete";
+"tunnelsListSelectButtonTitle" = "选择Select";
+"tunnelsListSelectAllButtonTitle" = "选择全部Select All";
+"tunnelsListDeleteButtonTitle" = "删除Delete";
+"tunnelsListSelectedTitle (%d)" = "%d 个选中selected";
+
+// Tunnels list menu
+
+"addTunnelMenuHeader" = "创建新的 WireGuard 隧道Add a new WireGuard tunnel";
+"addTunnelMenuImportFile" = "导入文件或压缩包Create from file or archive";
+"addTunnelMenuQRCode" = "扫描二维码Create from QR code";
+"addTunnelMenuFromScratch" = "手工创建Create from scratch";
+
+// Tunnels list alerts
+
+"alertImportedFromMultipleFilesTitle (%d)" = "成功创建 %d 个隧道Created  tunnels";
+"alertImportedFromMultipleFilesMessage (%1$d of %2$d)" = "导入文件中共 %2$d 个隧道，成功创建 %1$d 个Created of  tunnels from imported files";
+
+"alertImportedFromZipTitle (%d)" = "成功创建 %d 个隧道Created tunnels";
+"alertImportedFromZipMessage (%1$d of %2$d)" = "导入压缩包中共 %2$d 个隧道，成功创建 %1$d 个Created of tunnels from zip archive";
+
+"alertBadConfigImportTitle" = "无法导入隧道Unable to import tunnel";
+"alertBadConfigImportMessage (%@)" = "文件 ‘%@’ 中没有合法的 WireGuard 配置信息 The file does not contain a valid WireGuard configuration";
+
+"deleteTunnelsConfirmationAlertButtonTitle" = "删除Delete";
+"deleteTunnelConfirmationAlertButtonMessage (%d)" = "删除 %d 个隧道Delete %d tunnel?";
+"deleteTunnelsConfirmationAlertButtonMessage (%d)" = "删除 %d 个隧道Delete %d tunnels?";
+
+// Tunnel detail and edit UI
+
+"newTunnelViewTitle" = "创建配置信息New configuration";
+"editTunnelViewTitle" = "编辑配置信息Edit configuration";
+
+"tunnelSectionTitleStatus" = "状态Status";
+
+"tunnelStatusInactive" = "未连接Inactive";
+"tunnelStatusActivating" = "正在连接...Activating";
+"tunnelStatusActive" = "已连接Active";
+"tunnelStatusDeactivating" = "正在断开连接...Deactivating";
+"tunnelStatusReasserting" = "正在重新连接...Reactivating";
+"tunnelStatusRestarting" = "正在重启...Restarting";
+"tunnelStatusWaiting" = "等待中...Waiting";
+
+"macToggleStatusButtonActivate" = "已连接Activate";
+"macToggleStatusButtonActivating" = "正在连接...Activating…";
+"macToggleStatusButtonDeactivate" = "已断开连接Deactivate";
+"macToggleStatusButtonDeactivating" = "正在断开连接...Deactivating…";
+"macToggleStatusButtonReasserting" = "正在重新连接...Reactivating…";
+"macToggleStatusButtonRestarting" = "正在重启...Restarting…";
+"macToggleStatusButtonWaiting" = "等待中...Waiting…";
+
+"tunnelSectionTitleInterface" = "接口Interface";
+
+"tunnelInterfaceName" = "名称Name";
+"tunnelInterfacePrivateKey" = "私有密钥Private key";
+"tunnelInterfacePublicKey" = "公有密钥Public key";
+"tunnelInterfaceGenerateKeypair" = "生成密钥对Generate keypair";
+"tunnelInterfaceAddresses" = "地址Addresses";
+"tunnelInterfaceListenPort" = "端口Listen port";
+"tunnelInterfaceMTU" = "最大传输单位MTU";
+"tunnelInterfaceDNS" = "DNS 服务器DNS servers";
+"tunnelInterfaceStatus" = "状态Status";
+
+"tunnelSectionTitlePeer" = "节点Peer";
+
+"tunnelPeerPublicKey" = "公有密钥Public key";
+"tunnelPeerPreSharedKey" = "预共享密钥Preshared key";
+"tunnelPeerEndpoint" = "Endpoint";
+"tunnelPeerPersistentKeepalive" = "持续保持连接Persistent keepalive";
+"tunnelPeerAllowedIPs" = "允许的 IP Allowed IPs";
+"tunnelPeerRxBytes" = "接收数据Data received";
+"tunnelPeerTxBytes" = "发送数据Data sent";
+"tunnelPeerLastHandshakeTime" = "上次握手Latest handshake";
+"tunnelPeerExcludePrivateIPs" = "排除私有IPExclude private IPs";
+
+"tunnelSectionTitleOnDemand" = "按需激活On-Demand Activation";
+
+"tunnelOnDemandCellular" = "蜂窝网络Cellular";
+"tunnelOnDemandEthernet" = "雷雳以太网Ethernet";
+"tunnelOnDemandWiFi" = "无线局域网Wi-Fi";
+"tunnelOnDemandSSIDsKey" = "服务集标识SSIDs";
+
+"tunnelOnDemandAnySSID" = "任意服务集标识Any SSID";
+"tunnelOnDemandOnlyTheseSSIDs" = "含有这些服务集标识Only these SSIDs";
+"tunnelOnDemandExceptTheseSSIDs" = "排除这些服务集标识Except these SSIDs";
+"tunnelOnDemandOnlySSID (%d)" = "含有 %d 个服务集标识Only %d SSID";
+"tunnelOnDemandOnlySSIDs (%d)" = "含有 %d 个服务集标识Only %d SSIDs";
+"tunnelOnDemandExceptSSID (%d)" = "排除 %d 个服务集标识Except %d SSID";
+"tunnelOnDemandExceptSSIDs (%d)" = "排除 %d 个服务集标识Except %d SSIDs";
+"tunnelOnDemandSSIDOptionDescriptionMac (%1$@: %2$@)" = "%1$@: %2$@";
+
+"tunnelOnDemandSSIDViewTitle" = "服务集标识SSIDs";
+"tunnelOnDemandSectionTitleSelectedSSIDs" = "服务集标识SSIDs";
+"tunnelOnDemandNoSSIDs" = "没有服务集标识No SSIDs";
+"tunnelOnDemandSectionTitleAddSSIDs" = "添加服务集标识Add SSIDs";
+"tunnelOnDemandAddMessageAddConnectedSSID (%@)" = "添加当前连接Add connected: %@";
+"tunnelOnDemandAddMessageAddNewSSID" = "添加新的Add new";
+
+"tunnelOnDemandKey" = "按需On demand";
+"tunnelOnDemandOptionOff" = "关闭Off";
+"tunnelOnDemandOptionWiFiOnly" = "仅限无线局域网Wi-Fi only";
+"tunnelOnDemandOptionWiFiOrCellular" = "无线局域网或蜂窝网络Wi-Fi or cellular";
+"tunnelOnDemandOptionCellularOnly" = "仅限蜂窝网络Cellular only";
+"tunnelOnDemandOptionWiFiOrEthernet" = "无线局域网或雷雳以太网Wi-Fi or ethernet";
+"tunnelOnDemandOptionEthernetOnly" = "仅限雷雳以太网Ethernet only";
+
+"addPeerButtonTitle" = "添加节点Add peer";
+
+"deletePeerButtonTitle" = "删除节点Delete peer";
+"deletePeerConfirmationAlertButtonTitle" = "删除Delete";
+"deletePeerConfirmationAlertMessage" = "删除这个节点吗？Delete this peer?";
+
+"deleteTunnelButtonTitle" = "删除隧道Delete tunnel";
+"deleteTunnelConfirmationAlertButtonTitle" = "删除Delete";
+"deleteTunnelConfirmationAlertMessage" = "删除这个隧道吗Delete this tunnel?";
+
+"tunnelEditPlaceholderTextRequired" = "必填Required";
+"tunnelEditPlaceholderTextOptional" = "可选Optional";
+"tunnelEditPlaceholderTextAutomatic" = "自动Automatic";
+"tunnelEditPlaceholderTextStronglyRecommended" = "强烈推荐Strongly recommended";
+"tunnelEditPlaceholderTextOff" = "关闭Off";
+
+"tunnelPeerPersistentKeepaliveValue (%@)" = "每 %@ 秒every %@ seconds";
+"tunnelHandshakeTimestampNow" = "现在Now";
+"tunnelHandshakeTimestampSystemClockBackward" = "系统时钟设置不正确(System clock wound backwards)";
+"tunnelHandshakeTimestampAgo (%@)" = "%@ 前ago";
+"tunnelHandshakeTimestampYear (%d)" = "%d 年year";
+"tunnelHandshakeTimestampYears (%d)" = "%d 年years";
+"tunnelHandshakeTimestampDay (%d)" = "%d 天day";
+"tunnelHandshakeTimestampDays (%d)" = "%d 天days";
+"tunnelHandshakeTimestampHour (%d)" = "%d 小时hour";
+"tunnelHandshakeTimestampHours (%d)" = "%d 小时hours";
+"tunnelHandshakeTimestampMinute (%d)" = "%d 分钟minute";
+"tunnelHandshakeTimestampMinutes (%d)" = "%d 分钟minutes";
+"tunnelHandshakeTimestampSecond (%d)" = "%d 秒second";
+"tunnelHandshakeTimestampSeconds (%d)" = "%d 秒seconds";
+
+"tunnelHandshakeTimestampHours hh:mm:ss (%@)" = "%@ 小时hours";
+"tunnelHandshakeTimestampMinutes mm:ss (%@)" = "%@ 分钟minutes";
+
+"tunnelPeerPresharedKeyEnabled" = "启用enabled";
+
+// Error alerts while creating / editing a tunnel configuration
+
+/* Alert title for error in the interface data */
+"alertInvalidInterfaceTitle" = "无效接口Invalid interface";
+
+/* Any one of the following alert messages can go with the above title */
+"alertInvalidInterfaceMessageNameRequired" = "Interface name is required";
+"alertInvalidInterfaceMessagePrivateKeyRequired" = "Interface’s private key is required";
+"alertInvalidInterfaceMessagePrivateKeyInvalid" = "Interface’s private key must be a 32-byte key in base64 encoding";
+"alertInvalidInterfaceMessageAddressInvalid" = "Interface addresses must be a list of comma-separated IP addresses, optionally in CIDR notation";
+"alertInvalidInterfaceMessageListenPortInvalid" = "Interface’s listen port must be between 0 and 65535, or unspecified";
+"alertInvalidInterfaceMessageMTUInvalid" = "Interface’s MTU must be between 576 and 65535, or unspecified";
+"alertInvalidInterfaceMessageDNSInvalid" = "Interface’s DNS servers must be a list of comma-separated IP addresses";
+
+/* Alert title for error in the peer data */
+"alertInvalidPeerTitle" = "无效节点Invalid peer";
+
+/* Any one of the following alert messages can go with the above title */
+"alertInvalidPeerMessagePublicKeyRequired" = "Peer’s public key is required";
+"alertInvalidPeerMessagePublicKeyInvalid" = "Peer’s public key must be a 32-byte key in base64 encoding";
+"alertInvalidPeerMessagePreSharedKeyInvalid" = "Peer’s preshared key must be a 32-byte key in base64 encoding";
+"alertInvalidPeerMessageAllowedIPsInvalid" = "Peer’s allowed IPs must be a list of comma-separated IP addresses, optionally in CIDR notation";
+"alertInvalidPeerMessageEndpointInvalid" = "Peer’s endpoint must be of the form ‘host:port’ or ‘[host]:port’";
+"alertInvalidPeerMessagePersistentKeepaliveInvalid" = "Peer’s persistent keepalive must be between 0 to 65535, or unspecified";
+"alertInvalidPeerMessagePublicKeyDuplicated" = "Two or more peers cannot have the same public key";
+
+// Scanning QR code UI
+
+"scanQRCodeViewTitle" = "扫描二维码Scan QR code";
+"scanQRCodeTipText" = "提示：生成方法 Tip: Generate with `qrencode -t ansiutf8 < tunnel.conf`";
+
+// Scanning QR code alerts
+
+"alertScanQRCodeCameraUnsupportedTitle" = "摄像头不支持Camera Unsupported";
+"alertScanQRCodeCameraUnsupportedMessage" = "当前设备不支持扫描二维码This device is not able to scan QR codes";
+
+"alertScanQRCodeInvalidQRCodeTitle" = "无效二维码Invalid QR Code";
+"alertScanQRCodeInvalidQRCodeMessage" = "扫描的二维码不是有效的 WireGuard 配置The scanned QR code is not a valid WireGuard configuration";
+
+"alertScanQRCodeUnreadableQRCodeTitle" = "无效编码Invalid Code";
+"alertScanQRCodeUnreadableQRCodeMessage" = "扫描的二维码不能读取The scanned code could not be read";
+
+"alertScanQRCodeNamePromptTitle" = "请为扫描到的隧道命名Please name the scanned tunnel";
+
+// Settings UI
+
+"settingsViewTitle" = "设置Settings";
+
+"settingsSectionTitleAbout" = "关于About";
+"settingsVersionKeyWireGuardForIOS" = "WireGuard for iOS";
+"settingsVersionKeyWireGuardGoBackend" = "WireGuard Go Backend";
+
+"settingsSectionTitleExportConfigurations" = "导出配置信息Export configurations";
+"settingsExportZipButtonTitle" = "导出 zip 压缩包Export zip archive";
+
+"settingsSectionTitleTunnelLog" = "日志Log";
+"settingsViewLogButtonTitle" = "查看日志View log";
+
+// Log view
+
+"logViewTitle" = "日志Log";
+
+// Log alerts
+
+"alertUnableToRemovePreviousLogTitle" = "日志导出失败Log export failed";
+"alertUnableToRemovePreviousLogMessage" = "The pre-existing log could not be cleared";
+
+"alertUnableToWriteLogTitle" = "日志导出失败Log export failed";
+"alertUnableToWriteLogMessage" = "无法将日志写入文件Unable to write logs to file";
+
+// Zip import / export error alerts
+
+"alertCantOpenInputZipFileTitle" = "无法读取 zip 压缩包Unable to read zip archive";
+"alertCantOpenInputZipFileMessage" = "zip 压缩包不能被读取The zip archive could not be read.";
+
+"alertCantOpenOutputZipFileForWritingTitle" = "无法创建 zip 压缩包Unable to create zip archive";
+"alertCantOpenOutputZipFileForWritingMessage" = "无法写入 zip 文件Could not open zip file for writing.";
+
+"alertBadArchiveTitle" = "无法读取 zip 压缩包Unable to read zip archive";
+"alertBadArchiveMessage" = "zip 压缩包已损坏Bad or corrupt zip archive.";
+
+"alertNoTunnelsToExportTitle" = "没有导出数据Nothing to export";
+"alertNoTunnelsToExportMessage" = "没有隧道可供导出There are no tunnels to export";
+
+"alertNoTunnelsInImportedZipArchiveTitle" = "zip 压缩包里没有隧道信息No tunnels in zip archive";
+"alertNoTunnelsInImportedZipArchiveMessage" = "zip 压缩包里没有发现 .conf 隧道文件No .conf tunnel files were found inside the zip archive.";
+
+// Conf import error alerts
+
+"alertCantOpenInputConfFileTitle" = "无法从文件导入Unable to import from file";
+"alertCantOpenInputConfFileMessage (%@)" = "‘%@’ 文件无法读取The file ‘%@’ could not be read.";
+
+// Tunnel management error alerts
+
+"alertTunnelActivationFailureTitle" = "连接失败Activation failure";
+"alertTunnelActivationFailureMessage" = "隧道无法连接。请确保您已连接到互联网。The tunnel could not be activated. Please ensure that you are connected to the Internet.";
+"alertTunnelActivationSavedConfigFailureMessage" = "无法Unable to retrieve tunnel information from the saved configuration.";
+"alertTunnelActivationBackendFailureMessage" = "Unable to turn on Go backend library.";
+"alertTunnelActivationFileDescriptorFailureMessage" = "Unable to determine TUN device file descriptor.";
+"alertTunnelActivationSetNetworkSettingsMessage" = "Unable to apply network settings to tunnel object.";
+
+"alertTunnelActivationFailureOnDemandAddendum" = " This tunnel has Activate On Demand enabled, so this tunnel might be re-activated automatically by the OS. You may turn off Activate On Demand in this app by editing the tunnel configuration.";
+
+"alertTunnelDNSFailureTitle" = "DNS resolution failure";
+"alertTunnelDNSFailureMessage" = "One or more endpoint domains could not be resolved.";
+
+"alertTunnelNameEmptyTitle" = "No name provided";
+"alertTunnelNameEmptyMessage" = "Cannot create tunnel with an empty name";
+
+"alertTunnelAlreadyExistsWithThatNameTitle" = "Name already exists";
+"alertTunnelAlreadyExistsWithThatNameMessage" = "A tunnel with that name already exists";
+
+"alertTunnelActivationErrorTunnelIsNotInactiveTitle" = "Activation in progress";
+"alertTunnelActivationErrorTunnelIsNotInactiveMessage" = "The tunnel is already active or in the process of being activated";
+
+// Tunnel management error alerts on system error
+
+/* The alert message that goes with the following titles would be
+   one of the alertSystemErrorMessage* listed further down */
+"alertSystemErrorOnListingTunnelsTitle" = "Unable to list tunnels";
+"alertSystemErrorOnAddTunnelTitle" = "Unable to create tunnel";
+"alertSystemErrorOnModifyTunnelTitle" = "Unable to modify tunnel";
+"alertSystemErrorOnRemoveTunnelTitle" = "Unable to remove tunnel";
+
+/* The alert message for this alert shall include
+ one of the alertSystemErrorMessage* listed further down */
+"alertTunnelActivationSystemErrorTitle" = "Activation failure";
+"alertTunnelActivationSystemErrorMessage (%@)" = "The tunnel could not be activated. %@";
+
+/* alertSystemErrorMessage* messages */
+"alertSystemErrorMessageTunnelConfigurationInvalid" = "The configuration is invalid.";
+"alertSystemErrorMessageTunnelConfigurationDisabled" = "The configuration is disabled.";
+"alertSystemErrorMessageTunnelConnectionFailed" = "The connection failed.";
+"alertSystemErrorMessageTunnelConfigurationStale" = "The configuration is stale.";
+"alertSystemErrorMessageTunnelConfigurationReadWriteFailed" = "Reading or writing the configuration failed.";
+"alertSystemErrorMessageTunnelConfigurationUnknown" = "Unknown system error.";
+
+// Mac status bar menu / pulldown menu / main menu
+
+"macMenuNetworks (%@)" = "Networks: %@";
+"macMenuNetworksNone" = "Networks: None";
+
+"macMenuTitle" = "WireGuard";
+"macMenuManageTunnels" = "Manage Tunnels";
+"macMenuImportTunnels" = "Import Tunnel(s) from File…";
+"macMenuAddEmptyTunnel" = "Add Empty Tunnel…";
+"macMenuViewLog" = "View Log";
+"macMenuExportTunnels" = "Export Tunnels to Zip…";
+"macMenuAbout" = "About WireGuard";
+"macMenuQuit" = "Quit WireGuard";
+
+"macMenuHideApp" = "Hide WireGuard";
+"macMenuHideOtherApps" = "Hide Others";
+"macMenuShowAllApps" = "Show All";
+
+"macMenuFile" = "File";
+"macMenuCloseWindow" = "Close Window";
+
+"macMenuEdit" = "Edit";
+"macMenuCut" = "Cut";
+"macMenuCopy" = "Copy";
+"macMenuPaste" = "Paste";
+"macMenuSelectAll" = "Select All";
+
+"macMenuTunnel" = "Tunnel";
+"macMenuToggleStatus" = "Toggle Status";
+"macMenuEditTunnel" = "Edit…";
+"macMenuDeleteSelected" = "Delete Selected";
+
+"macMenuWindow" = "Window";
+"macMenuMinimize" = "Minimize";
+"macMenuZoom" = "Zoom";
+
+// Mac manage tunnels window
+
+"macWindowTitleManageTunnels" = "Manage WireGuard Tunnels";
+
+"macDeleteTunnelConfirmationAlertMessage (%@)" = "Are you sure you want to delete ‘%@’?";
+"macDeleteMultipleTunnelsConfirmationAlertMessage (%d)" = "Are you sure you want to delete %d tunnels?";
+"macDeleteTunnelConfirmationAlertInfo" = "You cannot undo this action.";
+"macDeleteTunnelConfirmationAlertButtonTitleDelete" = "Delete";
+"macDeleteTunnelConfirmationAlertButtonTitleCancel" = "Cancel";
+"macDeleteTunnelConfirmationAlertButtonTitleDeleting" = "Deleting…";
+
+"macButtonImportTunnels" = "Import tunnel(s) from file";
+"macSheetButtonImport" = "Import";
+
+"macNameFieldExportLog" = "Save log to:";
+"macSheetButtonExportLog" = "Save";
+
+"macNameFieldExportZip" = "Export tunnels to:";
+"macSheetButtonExportZip" = "Save";
+
+"macButtonDeleteTunnels (%d)" = "Delete %d tunnels";
+
+// Mac detail/edit view fields
+
+"macFieldKey (%@)" = "%@:";
+"macFieldOnDemand" = "On-Demand:";
+"macFieldOnDemandSSIDs" = "SSIDs:";
+
+// Mac status display
+
+"macStatus (%@)" = "Status: %@";
+
+// Mac editing config
+
+"macEditDiscard" = "Discard";
+"macEditSave" = "Save";
+
+"macAlertNameIsEmpty" = "Name is required";
+"macAlertDuplicateName (%@)" = "Another tunnel already exists with the name ‘%@’.";
+
+"macAlertInvalidLine (%@)" = "Invalid line: ‘%@’.";
+
+"macAlertNoInterface" = "Configuration must have an ‘Interface’ section.";
+"macAlertMultipleInterfaces" = "Configuration must have only one ‘Interface’ section.";
+"macAlertPrivateKeyInvalid" = "Private key is invalid.";
+"macAlertListenPortInvalid (%@)" = "Listen port ‘%@’ is invalid.";
+"macAlertAddressInvalid (%@)" = "Address ‘%@’ is invalid.";
+"macAlertDNSInvalid (%@)" = "DNS ‘%@’ is invalid.";
+"macAlertMTUInvalid (%@)" = "MTU ‘%@’ is invalid.";
+
+"macAlertUnrecognizedInterfaceKey (%@)" = "Interface contains unrecognized key ‘%@’";
+"macAlertInfoUnrecognizedInterfaceKey" = "Valid keys are: ‘PrivateKey’, ‘ListenPort’, ‘Address’, ‘DNS’ and ‘MTU’.";
+
+"macAlertPublicKeyInvalid" = "Public key is invalid";
+"macAlertPreSharedKeyInvalid" = "Preshared key is invalid";
+"macAlertAllowedIPInvalid (%@)" = "Allowed IP ‘%@’ is invalid";
+"macAlertEndpointInvalid (%@)" = "Endpoint ‘%@’ is invalid";
+"macAlertPersistentKeepliveInvalid (%@)" = "Persistent keepalive value ‘%@’ is invalid";
+
+"macAlertUnrecognizedPeerKey (%@)" = "Peer contains unrecognized key ‘%@’";
+"macAlertInfoUnrecognizedPeerKey" = "Valid keys are: ‘PublicKey’, ‘PresharedKey’, ‘AllowedIPs’, ‘Endpoint’ and ‘PersistentKeepalive’";
+
+"macAlertMultipleEntriesForKey (%@)" = "There should be only one entry per section for key ‘%@’";
+
+// Mac about dialog
+
+"macAppVersion (%@)" = "App version: %@";
+"macGoBackendVersion (%@)" = "Go backend version: %@";
+
+// Privacy
+
+"macExportPrivateData" = "export tunnel private keys";
+"macViewPrivateData" = "view tunnel private keys";
+"iosExportPrivateData" = "Authenticate to export tunnel private keys.";
+"iosViewPrivateData" = "Authenticate to view tunnel private keys.";
+
+// Mac alert
+
+"macConfirmAndQuitAlertMessage" = "Do you want to close the tunnels manager or quit WireGuard entirely?";
+"macConfirmAndQuitAlertInfo" = "If you close the tunnels manager, WireGuard will continue to be available from the menu bar icon.";
+"macConfirmAndQuitInfoWithActiveTunnel (%@)" = "If you close the tunnels manager, WireGuard will continue to be available from the menu bar icon.\n\nNote that if you quit WireGuard entirely the currently active tunnel ('%@') will still remain active until you deactivate it from this application or through the Network panel in System Preferences.";
+"macConfirmAndQuitAlertQuitWireGuard" = "Quit WireGuard";
+"macConfirmAndQuitAlertCloseWindow" = "Close Tunnels Manager";
+
+"macAppExitingWithActiveTunnelMessage" = "WireGuard is exiting with an active tunnel";
+"macAppExitingWithActiveTunnelInfo" = "The tunnel will remain active after exiting. You may disable it by reopening this application or through the Network panel in System Preferences.";
+
+// Mac tooltip
+
+"macToolTipEditTunnel" = "编辑隧道Edit tunnel (⌘E)";
+"macToolTipToggleStatus" = "Toggle status (⌘T)";
+
+// Mac log view
+
+"macLogColumnTitleTime" = "时间Time";
+"macLogColumnTitleLogMessage" = "日志消息Log message";
+"macLogButtonTitleClose" = "关闭Close";
+"macLogButtonTitleSave" = "保存Save…";
+
+// Mac unusable tunnel view
+
+"macUnusableTunnelMessage" = "这个隧道的配置信息无法在钥匙串里找到。The configuration for this tunnel cannot be found in the keychain.";
+"macUnusableTunnelInfo" = "如果这个隧道是由其它用户创建的，只有创建用户可以查看，编辑或激活这个隧道。In case this tunnel was created by another user, only that user can view, edit, or activate this tunnel.";
+"macUnusableTunnelButtonTitleDeleteTunnel" = "删除隧道Delete tunnel";
+
+// Mac App Store updating alert
+
+"macAppStoreUpdatingAlertMessage" = "App Store 想要更新 WireGuardApp Store would like to update WireGuard";
+"macAppStoreUpdatingAlertInfoWithOnDemand (%@)" = "请先取消隧道 ‘%@’ 的按需激活，并断开连接，然后继续在 App Store 里更新。Please disable on-demand for tunnel ‘%@’, deactivate it, and then continue updating in App Store.";
+"macAppStoreUpdatingAlertInfoWithoutOnDemand (%@)" = "请断开隧道 ‘%@’ 的连接，然后继续在 App Store 里更新。Please deactivate tunnel ‘%@’ and then continue updating in App Store.";
+
+// Donation
+
+"donateLink" = "♥ 捐款给 WireGuard 项目 Donate to the WireGuard Project";

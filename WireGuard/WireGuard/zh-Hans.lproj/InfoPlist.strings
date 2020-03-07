@@ -1,0 +1,7 @@
+// SPDX-License-Identifier: MIT
+// Copyright © 2018-2019 WireGuard LLC. All Rights Reserved.
+
+// iOS permission prompts
+
+NSCameraUsageDescription = "摄像头用来扫描二维码以导入 WireGuard 配置信息Camera is used for scanning QR codes for importing WireGuard configurations";
+NSFaceIDUsageDescription = "使用面容 ID 来进行安全验证，以便查看和导出私有密钥 Face ID is used for authenticating viewing and exporting of private keys";
